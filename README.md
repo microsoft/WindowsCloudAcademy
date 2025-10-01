@@ -4,19 +4,17 @@
 
 The Winodws Cloud Academy is designed to help you get hands-on experience with Windows 365 (W365) and Azure Virtual Desktop (AVD). 
 
-W365 - is a cloud-based service that automatically creates a new type of Windows virtual machine (Cloud PCs) for your end users. Each Cloud PC is assigned to an individual user and is their dedicated Windows device. Windows 365 provides the productivity, security, and collaboration benefits of Microsoft 365.
+W365 - is a cloud-based service that automatically provisions Cloud PCs—dedicated Windows devices assigned to individual users. It combines the productivity, security, and collaboration features of Microsoft 365 with the flexibility of the cloud.
 
-AVD – is a born-in-the-cloud desktop-as-a-service platform service offered entirely on our Microsoft Intelligent Cloud. All traditional infrastructure services such as brokering, web access, load balancer, management and monitoring are part of the AVD control plane and can be configured from the Azure portal, via the Azure Resource Manager (ARM), Biceps or Terraform. 
+AVD – is a fully cloud-native Desktop-as-a-Service (DaaS) platform. It includes built-in infrastructure components like brokering, web access, load balancing, management, and monitoring—all configurable via the Azure portal, ARM templates, Bicep, or Terraform.
 
 ## Learning objectives 
 
-Discover how to select the best virtual desktop option and master your Windows365 and Azure Virtual Desktop!
+By the end of this Academy, you'll be able to:
 
-In this Windows Cloud Academy you will learn how to set up and manage Windows365 cloud PCs and AVD solutions with Microsoft tools.
-
-We’ll cover topics such as building an Windows 365, AVD environment, Intune device config policies, handling the RDP properties, and launching custom images.
-
-You’ll finish this Academy with the understanding and abilities necessary to rule the DaaS realm and create your own Windows 365 and AVD!
+- Choose the right virtual desktop solution for your needs.
+- Set up and manage Windows 365 Cloud PCs and AVD environments using Microsoft tools.
+- Configure Intune device policies, manage RDP properties, and deploy applications.
 
 ## Requirements
 
@@ -27,7 +25,7 @@ You’ll finish this Academy with the understanding and abilities necessary to r
 
 1.	Welcome
 2.	Introduction - Windows 365 and Azure Virtual Desktop
-3.  Getting started with Azure Virtual Desktop
+3. Getting started with Azure Virtual Desktop
 4.	Getting started with Windows 365
 5.	Q&A
 
@@ -39,7 +37,7 @@ You’ll finish this Academy with the understanding and abilities necessary to r
  
  ## The environment
  
- This is the W365, AVD & DevBox Masterclass Architecture:
+ This is the W365 & AVD Windows Cloud Academy Architecture:
  
  ![This image shows the Master Class Architecture](Images/DaaS-accelerator-baseline-architecture.png)
  
@@ -73,3 +71,4 @@ You’ll finish this Academy with the understanding and abilities necessary to r
 
 
 Engineered and powered by [avdpunks.com](https://avdpunks.com)
+
