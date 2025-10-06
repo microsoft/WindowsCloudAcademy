@@ -1,4 +1,4 @@
-![header](Images/header_new.png)
+![header](Images/header.png)
 
 # Windows Cloud Academy
 
@@ -71,5 +71,6 @@ By the end of this Academy, you'll be able to:
 
 
 Engineered and powered by [avdpunks.com](https://avdpunks.com)
+
 
 
