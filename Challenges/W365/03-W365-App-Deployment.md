@@ -10,12 +10,15 @@ After provisioning, you can customize the user experience by using Intune to pus
 
 ## Challenge
 
-It is important that your users have Visual Studio Code installed.
+It is important that your users have **Visual Studio Code** installed. 
+
+You can choose to deploy the app either as a Win32 application or as a Microsoft Store app. 
+
+If you decide to deploy Visual Studio Code as a Win32 application, use a unique app name format such as: **App-P[count]-YourAppName**. 
 
 ## Success Criteria
 
-1.	Visual Studio Code, with the name **App-P[count]-YourAppName** is available as a new Windows application (Win32) in Intune.
-2.  Application Visual Studio Code is assigned and installed on your Cloud PC.
+- Application Visual Studio Code is assigned and installed on your Cloud PC.
 
 ## Learning Resources
 - [Windows 365 and Apps](https://learn.microsoft.com/en-us/windows-365/enterprise/app-overview)
