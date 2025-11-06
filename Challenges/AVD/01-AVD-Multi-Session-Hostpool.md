@@ -14,7 +14,7 @@ Create AVD multi-session hostpool joined in Microsoft Entra ID:
 - Validation environment: **No**
 - Create Session Host Configuration: **No**
 - Host Pool type: **Pooled**
-- Compute family: **Standard Dasv6**
+- Compute family: **Standard Dasv6** or **Standard Dsv6**
 - Choose **Windows 11 Enterprise multi-session Version + Microsoft 365 Apps** Gallery image  
 - Domain to join: **Microsoft Entra ID (Enroll with Intune "No")**
 - Register desktop app group to **new workspace**
