@@ -15,8 +15,8 @@ Open the **AVD Insights configuration workbook** from your existing host pool an
 
 ## Success Criteria
 
-- AVD Insight is enabled and displays monitoring data from the AVD control plan and AVD session hosts.
-- You can see your network latency. 
+- AVD Insights is enabled and displays monitoring data from both the AVD control plane and AVD session hosts.
+- Network latency and user login attempts are visible within the AVD Insight dashboard.
 
 ### Learning Resources
 - [Create a Log Analytics workspace](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal)
