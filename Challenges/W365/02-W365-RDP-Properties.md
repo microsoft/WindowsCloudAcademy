@@ -22,11 +22,9 @@ In addition **no local drive** should be available in the remote session.
 
 ## 💡 Pro Tipps 💡
 
-> **Option 1:** Use a dynamic Entra ID device group
->  Create a dynamic group that includes only your Cloud PC. Ensure the filter matches your device name exactly or starts with a specific pattern to avoid including other devices.
+> **Option 1:** Create a dynamic group that includes only your Cloud PC. Ensure the filter matches your device name exactly or starts with a specific pattern to avoid including other devices.
 
-> **Option 2:** Use Intune assignment filters
-> Create an assignment filter in Intune and configure it so that only your Cloud PC matches the criteria. Next, assign the configuration policy to all devices, but apply the filter to ensure the policy is restricted to your Cloud PC only.
+> **Option 2:** Create an assignment filter in Intune and configure it so that only your Cloud PC matches the criteria. Next, assign the configuration policy to all devices, but apply the filter to ensure the policy is restricted to your Cloud PC only.
 
 ## Success Criteria
 
