@@ -20,20 +20,21 @@ Your Security Team want to **prevent** that a user can **Copy & Paste** data fro
 
 In addition **no local drive** should be available in the remote session.
 
+## 💡 Pro Tipps 💡
+
+> **Option 1:** Use a dynamic Entra ID device group
+>  Create a dynamic group that includes only your Cloud PC. Ensure the filter matches your device name exactly or starts with a specific pattern to avoid including other devices.
+
+> **Option 2:** Use Intune assignment filters
+> Create an assignment filter in Intune and configure it so that only your Cloud PC matches the criteria. Next, assign the configuration policy to all devices, but apply the filter to ensure the policy is restricted to your Cloud PC only.
+
 ## Success Criteria
 
 1. A new dynamic group with **your** Cloud PC is configured.
 2. A new device configuration policy is created for your Cloud PC and **Copy & Paste** is not possible and **local drives** are **not** redirected.
 
-## 💡 Pro Tipps 💡
-
-> **Option 1** Use a dynamic Entra ID device group
->  Create a dynamic group that includes only your Cloud PC. Ensure the filter matches your device name exactly or starts with a specific pattern to avoid including other devices.
-
-> **Option 2** Use Intune assignment filters
-> Create an assignment filter in Intune and configure it so that only your Cloud PC matches the criteria. Next, assign the configuration policy to all devices, but apply the filter to ensure the policy is restricted to your Cloud PC only.
-
 ## Learning Resources
 - [Manage RDP Devices](https://learn.microsoft.com/en-us/windows-365/enterprise/manage-rdp-device-redirections)
-- [Dynamic membership rules for groups in Azure Active Directory](https://learn.microsoft.com/en-us/azure/active-directory/enterprise-users/groups-dynamic-membership)
 - [Create a device profile in Microsoft Intune](https://learn.microsoft.com/en-us/mem/intune/configuration/device-profile-create)
+- [Dynamic membership rules for groups in Azure Active Directory](https://learn.microsoft.com/en-us/azure/active-directory/enterprise-users/groups-dynamic-membership)
+- [Use filters when assigning your apps, policies, and profiles in Microsoft Intune](https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/filters)
