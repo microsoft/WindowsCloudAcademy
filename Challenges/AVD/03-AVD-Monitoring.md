@@ -1,6 +1,6 @@
 # Challenge 3: Enable AVD Insights
 
-[Previous Challenge](./02-AVD-RDP-Properties.md) - **[Home](../../readme.md)** - [Next Challenge](../W365/01-W365-Provisioning-CPC.md)
+[Previous Challenge](./02-AVD-RDP-Properties.md) - **[Home](../../README.md)** - [Next Challenge](../W365/01-W365-Provisioning-CPC.md)
 
 ## Introduction
 
