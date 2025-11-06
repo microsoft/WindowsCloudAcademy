@@ -28,7 +28,7 @@ In addition **no local drive** should be available in the remote session.
 
 ## Success Criteria
 
-1. A new dynamic group with **your** Cloud PC is configured.
+1. A new **dynamic group** with **your** Cloud PC is configured **or** **Intune assignment filter** for **your** Cloud PC. 
 2. A new device configuration policy is created for your Cloud PC and **Copy & Paste** is not possible and **local drives** are **not** redirected.
 
 ## Learning Resources
