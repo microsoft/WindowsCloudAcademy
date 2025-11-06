@@ -1,4 +1,4 @@
-# Challenge 1: Provisioning a Cloud PC
+# Challenge 1: Provisioning a Windows 365 Enterprise Cloud PC
 
 [Previous Challenge](../AVD/03-AVD-FSLogix.md) - **[Home](../../readme.md)** - [Next Challenge](./02-W365-RDP-Properties.md)
 
@@ -10,7 +10,7 @@ With Windows 365, users can log in to their cloud-based Windows desktop from any
 
 ## Challenge
 
-You have purchased one Windows 365 licenses. At this point, you can start with the provisioning of Cloud PCs.
+You have purchased one Windows 365 Enterprise licenses. At this point, you can start with the provisioning of Cloud PCs.
 
 To set up your system to provision on-demand Cloud PCs for you, you need to:
 
