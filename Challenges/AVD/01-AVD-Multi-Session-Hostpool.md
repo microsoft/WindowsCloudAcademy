@@ -27,6 +27,11 @@ Login to the session host
 Create new Remote Apps
 - Deploy **Microsoft Edge and Word (or whatever) as Remote Apps**
 
+## 💡 Pro Tipps 💡
+> **1.** We are deploying an EntraID only host pool. In this case you have to set IAM (RBAC) rights on the resource group level. [More information here](https://learn.microsoft.com/en-us/azure/virtual-desktop/azure-ad-joined-session-hosts#assign-user-access-to-host-pools)
+
+> **2.** If you are trying to access your virtual desktop from **Windows devices or other devices that are not connected to the same Entra ID tenant**, add **targetisaadjoined:i:1** as a custom RDP property to the host pool. [More information here](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-azure-ad-joined-vm#access-azure-ad-joined-vms)
+
 ## Success Criteria
 1.	Host Pools are created and Session Hosts are showing available
 2.	Users are assigned to the appropriate application group of the host pool
@@ -34,11 +39,6 @@ Create new Remote Apps
 4.	VMs are joined to Microsoft Entra ID
 5.  Users can sign in to the VM
 6.  Office Apps can be accessed via RemoteApp
-
-## 💡 Pro Tipps 💡
-> **1.** We are deploying an EntraID only host pool. In this case you have to set IAM (RBAC) rights on the resource group level. [More information here](https://learn.microsoft.com/en-us/azure/virtual-desktop/azure-ad-joined-session-hosts#assign-user-access-to-host-pools)
-
-> **2.** If you are trying to access your virtual desktop from **Windows devices or other devices that are not connected to the same Entra ID tenant**, add **targetisaadjoined:i:1** as a custom RDP property to the host pool. [More information here](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-azure-ad-joined-vm#access-azure-ad-joined-vms)
 
 ## Learning Resources
 - [Create Azure Virtual Desktop Hostpool](https://learn.microsoft.com/en-us/azure/virtual-desktop/create-host-pools-azure-marketplace)
