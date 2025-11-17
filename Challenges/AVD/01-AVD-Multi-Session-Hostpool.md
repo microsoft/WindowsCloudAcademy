@@ -1,6 +1,6 @@
 # Challenge 1: Create a host pool for multi-session
 
-[Previous Challenge](../../readme.md) - **[Home](../../readme.md)** - [Next Challenge](./02-AVD-RDP-Properties.md)
+[Previous Challenge](../../readme.md) - **[Home](../../README.md)** - [Next Challenge](./02-AVD-RDP-Properties.md)
 
 ## Introduction
 
@@ -16,7 +16,7 @@ Create AVD multi-session hostpool joined in Microsoft Entra ID:
 - Host Pool type: **Pooled**
 - Compute family: **Standard Dasv6** or **Standard Dsv6**
 - Choose **Windows 11 Enterprise multi-session Version + Microsoft 365 Apps** Gallery image  
-- Domain to join: **Microsoft Entra ID (Enroll with Intune "No")**
+- Domain to join: **Microsoft Entra ID** and Enroll with Intune **No**
 - Register desktop app group to **new workspace**
 - Assign users
 - Enable Microsoft Entra ID single sign on: "Connections will use Microsoft Entra authentication to provide single sign-on."

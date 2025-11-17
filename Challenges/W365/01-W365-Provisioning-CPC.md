@@ -1,6 +1,6 @@
 # Challenge 1: Provisioning a Windows 365 Enterprise Cloud PC
 
-[Previous Challenge](../AVD/03-AVD-FSLogix.md) - **[Home](../../readme.md)** - [Next Challenge](./02-W365-RDP-Properties.md)
+[Previous Challenge](../AVD/03-AVD-FSLogix.md) - **[Home](../../README.md)** - [Next Challenge](./02-W365-RDP-Properties.md)
 
 ## Introduction
 

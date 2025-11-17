@@ -1,6 +1,6 @@
 # Challenge 3: Deploy application via Intune
 
-[Previous Challenge](./02-W365-RDP-Properties.md) - **[Home](../../readme.md)** - [Next Challenge](../W365/04-W365-Frontline.md)
+[Previous Challenge](./02-W365-RDP-Properties.md) - **[Home](../../README.md)** - [Next Challenge](../W365/04-W365-Frontline.md)
 
 ## Introduction
 
