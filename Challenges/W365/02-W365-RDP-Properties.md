@@ -27,9 +27,8 @@ In addition **no local drive** should be available in the remote session.
 > **Option 2:** Create an assignment filter in Intune and configure it so that only your Cloud PC matches the criteria. Next, assign the configuration policy to all devices, but apply the filter to ensure the policy is restricted to your Cloud PC only.
 
 ## Success Criteria
-
-1. A new **dynamic group** with **your** Cloud PC is configured **or** **Intune assignment filter** for **your** Cloud PC. 
-2. A new device configuration policy is created for your Cloud PC and **Copy & Paste** is not possible and **local drives** are **not** redirected.
+- A new **dynamic group** with **your** Cloud PC is configured **or** **Intune assignment filter** for **your** Cloud PC. 
+- A new device configuration policy is created for your Cloud PC and **Copy & Paste** is not possible and **local drives** are **not** redirected.
 
 ## Learning Resources
 - [Manage RDP Devices](https://learn.microsoft.com/en-us/windows-365/enterprise/manage-rdp-device-redirections)

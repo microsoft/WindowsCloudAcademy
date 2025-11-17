@@ -22,10 +22,10 @@ To set up your system to provision on-demand Cloud PCs for you, you need to:
 - **Make sure your Cloud PC has a custom name that is not the default, for example: CPC-P1-%RAND:5%"**
 
 ## Success Criteria
-1.  A Windows365 & Intune License is automatically assigned to your users.
-2.  Your User has local admin rights.
-3.  A provisioning policy with **PP-P[count]-YourPolicyName** is created.
-4.  A Cloud PC deployment is running.
+- A Windows365 & Intune License is automatically assigned to your users.
+- Your User has local admin rights.
+- A provisioning policy with **PP-P[count]-YourPolicyName** is created.
+- A Cloud PC deployment is running.
 
 ## Learning Resources
 - [Deployment overview](https://learn.microsoft.com/en-us/windows-365/enterprise/deployment-overview)
