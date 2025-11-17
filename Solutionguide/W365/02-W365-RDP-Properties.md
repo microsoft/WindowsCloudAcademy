@@ -1,9 +1,5 @@
 # Solutionguide 2: Configure RDP Properties
 
-## Introduction
-
-For **security** reasons, you want to override the default and block some devices from being redirected.
-
 ## Challenge
 
 Your Security Team want to **prevent** that a user can **Copy & Paste** data from their local client to the Cloud PC.
