@@ -39,7 +39,7 @@ By the end of this Academy, you'll be able to:
  
  This is the W365 & AVD Windows Cloud Academy Architecture:
  
- ![This image shows the Master Class Architecture](Images/DaaS-accelerator-baseline-architecture.png)
+ ![This image shows the Windows Cloud Academy Architecture](Images/WindowsCloud-accelerator-baseline-architecture.png)
  
  ## Credentials
  
@@ -73,6 +73,7 @@ By the end of this Academy, you'll be able to:
 
 
 Engineered and powered by [avdpunks.com](https://avdpunks.com)
+
 
 
 
