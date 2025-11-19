@@ -47,8 +47,9 @@ By the end of this Academy, you'll be able to:
  
  ## Access Windows Cloud Solutions
  
- - [Webclient](https://windows.cloud.microsoft/)
- - [Windows App (store)](https://apps.microsoft.com/detail/9N1F85V9T8BN) or [Windows App (offline installer)](https://go.microsoft.com/fwlink/?linkid=2262633)
+ - [Windows App Webclient](https://windows.cloud.microsoft/)
+ - [Windows App for Windows (Microsoft Store)](https://apps.microsoft.com/detail/9N1F85V9T8BN) or [Windows App (offline installer)](https://go.microsoft.com/fwlink/?linkid=2262633)
+ - [Windows App for macOS](https://aka.ms/WindowsAppForMacOS)
 
  ## Challenges
  
@@ -72,6 +73,7 @@ By the end of this Academy, you'll be able to:
 
 
 Engineered and powered by [avdpunks.com](https://avdpunks.com)
+
 
 
 
