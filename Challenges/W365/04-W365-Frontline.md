@@ -10,6 +10,8 @@
 
 A Windows 365 Frontline license can be used in shared mode for dedicated desktops or for delivering cloud apps.
 
+**User Experience Sync** is a feature for Windows 365 Frontline Cloud PCs in shared mode and Windows 365 Cloud Apps. This cloud-native solution delivers a seamless and consistent experience for users across Cloud PC and Cloud App sessions.
+
 ## Challenge
 
 In this challenge, you can choose to deploy your single Windows 365 Frontline license either in **dedicated desktop mode** or in **cloud apps mode** . 
