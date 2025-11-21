@@ -50,15 +50,15 @@ Each participant has **only one** Windows 365 Frontline license available, so de
 
 3.  On the **General** tab, make the following settings:
 
-| Setting         | Value    | Note |
-|--------------|-----------|-----------|
+| Setting         | Value    | 
+|--------------|-----------|
 | Name | Select a name for your provisioning policy, e.g. **PP-P0-W365-Frontline-Shared-Desktop**      |
 | Experience    | **Access a full Cloud PC desktop** |
 | License type    | **Frontline** |
 | Frontline type    | **Shared** |
 | Join type | **Microsoft Entra Join** |
 | Network    | **Microsoft hosted network** |
-| Geography  | **Germany** | You can also select **European Union**. |
+| Geography  | **European Union** |
 | Use Microsoft Entra single sign-on | **Enabled** |
 
 ![W365 Provisioning policy - Frontline Shared Dedicated Desktop](../../Images/SolutionGuide/W365/04-W365-FrontlineSharedDesktop-03.png)
@@ -119,13 +119,13 @@ Click **Connect** to connect to your Cloud PC.
 
 3.  On the **General** tab, make the following settings:
 
-| Setting         | Value    | Note |
-|--------------|-----------|-----------|
+| Setting         | Value    |
+|--------------|-----------|
 | Name | Select a name for your provisioning policy, e.g. **PP-P0-W365-Frontline-Shared-Apps**      |
 | Experience    | **Access only apps which run on a Cloud PC** |
 | Join type | **Microsoft Entra Join** |
 | Network    | **Microsoft hosted network** |
-| Geography  | **Germany** | You can also select **European Union**. |
+| Geography  | **European Union** |
 | Use Microsoft Entra single sign-on | **Enabled** |
 
 ![W365 Provisioning policy - Frontline Shared Cloud Apps](../../Images/SolutionGuide/W365/04-W365-FrontlineSharedApps-01.png)
