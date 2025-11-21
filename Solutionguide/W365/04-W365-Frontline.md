@@ -174,6 +174,8 @@ You should then see under **All Cloud PCs** that the provisioning of the Cloud P
 
 10. Select the apps you want to publish as cloud apps from the list, such as **Word or Microsoft Edge**, and then click **Publish**. 
 
+![W365 Provisioning policy - Frontline Shared Cloud Apps](../../Images/SolutionGuide/W365/04-W365-FrontlineSharedApps-07.png)
+
 After a few minutes, the apps should appear with the app status **Published**. 
 
 11. You can log in with the [**Windows App Web Client**](https://windows365.microsoft.com/ent) or the native **Windows App** and then open **Apps** to view all your published cloud apps.
