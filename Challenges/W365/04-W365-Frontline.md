@@ -54,5 +54,5 @@ Each participant has **only one** Windows 365 Flex license available, so decide 
 - [What is Windows 365 Flex?](https://learn.microsoft.com/en-us/windows-365/enterprise/introduction-windows-365-Flex)
 - [Create provisioning policies](https://learn.microsoft.com/en-us/windows-365/enterprise/create-provisioning-policy)
 - [Windows 365 Cloud Apps](https://learn.microsoft.com/en-us/windows-365/enterprise/cloud-apps)
-- [User Experience Sync for Windows 365 Flex in shared mode](https://learn.microsoft.com/en-us/windows-365/enterprise/Flex-user-experience-sync)
+- [User Experience Sync for Windows 365 Flex in shared mode](https://learn.microsoft.com/en-us/windows-365/enterprise/windows-365-flex-user-experience-sync)
 
