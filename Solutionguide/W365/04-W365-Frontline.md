@@ -1,28 +1,28 @@
-# Solutionguide 4: Deploy Windows 365 Frontline Shared Desktop or Cloud Apps
+# Solutionguide 4: Deploy Windows 365 Flex Shared Desktop or Cloud Apps
 
 ## Challenge
 
-In this challenge, you can choose to deploy your single Windows 365 Frontline license either in **dedicated desktop mode** or in **cloud apps mode**. 
+In this challenge, you can choose to deploy your single Windows 365 Flex license either in **dedicated desktop mode** or in **cloud apps mode**. 
 
-Each participant has **only one** Windows 365 Frontline license available, so decide which option you would like to test:
+Each participant has **only one** Windows 365 Flex license available, so decide which option you would like to test:
 
-### Option 1 - Windows 365 Frontline Shared in dedicated Desktop mode
+### Option 1 - Windows 365 Flex Shared in dedicated Desktop mode
 
 - Create a provisioning policy
 - Experience: **Full Cloud PC desktop**
-- License type: **Frontline**
-- Frontline type: **Shared**
+- License type: **Flex**
+- Flex type: **Shared**
 - Your cloud PC should be set up to use **Microsoft Hosted Networks** and only supports **Microsoft Entra Join** for identity and access.
 - Region: **North Europe**
 - **Make sure your Cloud PC has a custom name that is not the default, for example: CPC-P1-%RAND:5%"**
 - Assign your user group, but ensure the number of Cloud PCs is set to **one**.
 
-### Option 2 - Windows 365 Frontline Shared in Cloud Apps mode
+### Option 2 - Windows 365 Flex Shared in Cloud Apps mode
 
 - Create a provisioning policy
 - Experience: **Cloud Apps**
-- License type: **Frontline**
-- Frontline type: **Shared**
+- License type: **Flex**
+- Flex type: **Shared**
 - Your cloud PC should be set up to use **Microsoft Hosted Networks** and only supports **Microsoft Entra Join** for identity and access.
 - Region: **North Europe**
 - **Make sure your Cloud PC has a custom name that is not the default, for example: CPC-P1-%RAND:5%"**
@@ -30,15 +30,15 @@ Each participant has **only one** Windows 365 Frontline license available, so de
 
 ## Success Criteria
 
-### Option 1 - Windows 365 Frontline Shared in dedicated Desktop mode
+### Option 1 - Windows 365 Flex Shared in dedicated Desktop mode
 - Your Cloud PC in dedicated desktop mode is now available, and you can log in.
 - You will receive a new user profile each time you sign in.
 
-### Option 2 - Windows 365 Frontline Shared in Cloud Apps mode
+### Option 2 - Windows 365 Flex Shared in Cloud Apps mode
 - Your Cloud PC in Cloud Apps mode is now available, and you have published example apps such as Word and Notepad.
 - You can log in and start using a Cloud app.
 
-## Solutionguide: Option 1 - Windows 365 Frontline Shared in dedicated Desktop mode
+## Solutionguide: Option 1 - Windows 365 Flex Shared in dedicated Desktop mode
 
 1.  Sign in to the [Microsoft Intune](https://intune.microsoft.com/) and navigate to **Devices** then **Windows 365** to access the Windows 365 management panel.
 
@@ -52,10 +52,10 @@ Each participant has **only one** Windows 365 Frontline license available, so de
 
 | Setting         | Value    | 
 |--------------|-----------|
-| Name | Select a name for your provisioning policy, e.g. **PP-P0-W365-Frontline-Shared-Desktop**      |
+| Name | Select a name for your provisioning policy, e.g. **PP-P0-W365-Flex-Shared-Desktop**      |
 | Experience    | **Access a full Cloud PC desktop** |
-| License type    | **Frontline** |
-| Frontline type    | **Shared** |
+| License type    | **Flex** |
+| Flex type    | **Shared** |
 | Join type | **Microsoft Entra Join** |
 | Network    | **Microsoft hosted network** |
 | Geography  | **European Union** |
@@ -81,13 +81,13 @@ For additional services select **None** and click **Next**.
 
 6. You can skip the **Scope tags** tab and continue with the **Assignments** user group. Click **Add groups** and search for your user group, e.g. **GRP-P1-Users** and click **select**. 
 
-With W365 Frontline, you must select the Cloud PC size here under **Select one**.
+With W365 Flex, you must select the Cloud PC size here under **Select one**.
 
 ![W365 Provisioning policy - Frontline Shared Dedicated Desktop](../../Images/SolutionGuide/W365/04-W365-FrontlineSharedDesktop-06.png)
 
-7. Select an available Cloud PC SKU from the list, enter an assignment name, such as **P0 Frontline Desktop**, and enter the number of Cloud PCs as **1**. 
+7. Select an available Cloud PC SKU from the list, enter an assignment name, such as **P0 Flex Desktop**, and enter the number of Cloud PCs as **1**. 
 
-> **Note:** Each participant has only **ONE** Windows 365 Frontline license. One license means one cloud PC. 
+> **Note:** Each participant has only **ONE** Windows 365 Flex license. One license means one cloud PC. 
 
 ![W365 Provisioning policy - Frontline Shared Dedicated Desktop](../../Images/SolutionGuide/W365/04-W365-FrontlineSharedDesktop-07.png)
 
@@ -101,13 +101,13 @@ You should then see under **All Cloud PCs** that the provisioning of the Cloud P
 
 > **Note**: Provisioning a Cloud PC takes around 25-35 minutes and depends on the current queue, region and language configuration.
 
-9. Once your Frontline Cloud PC has been successfully created and you can log in with the [**Windows App Web Client**](https://windows365.microsoft.com/ent) or the native **Windows App** and then open **Devices**.
+9. Once your Flex Cloud PC has been successfully created and you can log in with the [**Windows App Web Client**](https://windows365.microsoft.com/ent) or the native **Windows App** and then open **Devices**.
 
 ![W365 Windows App - Frontline Shared Dedicated Desktop](../../Images/SolutionGuide/W365/04-W365-FrontlineSharedDesktop-09.png)
 
 Click **Connect** to connect to your Cloud PC.  
 
-## Solutionguide: Option 2 - Windows 365 Frontline Shared in Cloud Apps mode
+## Solutionguide: Option 2 - Windows 365 Flex Shared in Cloud Apps mode
 
 1.  Sign in to the [Microsoft Intune](https://intune.microsoft.com/) and navigate to **Devices** then **Windows 365** to access the Windows 365 management panel.
 
@@ -121,7 +121,7 @@ Click **Connect** to connect to your Cloud PC.
 
 | Setting         | Value    |
 |--------------|-----------|
-| Name | Select a name for your provisioning policy, e.g. **PP-P0-W365-Frontline-Shared-Apps**      |
+| Name | Select a name for your provisioning policy, e.g. **PP-P0-W365-Flex-Shared-Apps**      |
 | Experience    | **Access only apps which run on a Cloud PC** |
 | Join type | **Microsoft Entra Join** |
 | Network    | **Microsoft hosted network** |
@@ -148,13 +148,13 @@ For additional services select **None** and click **Next**.
 
 6. You can skip the **Scope tags** tab and continue with the **Assignments** user group. Click **Add groups** and search for your user group, e.g. **GRP-P1-Users** and click **select**. 
 
-With W365 Frontline, you must select the Cloud PC size here under **Select one**.
+With W365 Flex, you must select the Cloud PC size here under **Select one**.
 
 ![W365 Provisioning policy - Frontline Shared Cloud Apps](../../Images/SolutionGuide/W365/04-W365-FrontlineSharedDesktop-06.png)
 
-7. Select an available Cloud PC SKU from the list, enter an assignment name, such as **P0 Frontline Desktop**, and enter the number of Cloud PCs as **1**. 
+7. Select an available Cloud PC SKU from the list, enter an assignment name, such as **P0 Flex Desktop**, and enter the number of Cloud PCs as **1**. 
 
-> **Note:** Each participant has only **ONE** Windows 365 Frontline license. One license means one cloud PC. 
+> **Note:** Each participant has only **ONE** Windows 365 Flex license. One license means one cloud PC. 
 
 ![W365 Provisioning policy - Frontline Shared Cloud Apps](../../Images/SolutionGuide/W365/04-W365-FrontlineSharedApps-03.png)
 
@@ -168,7 +168,7 @@ You should then see under **All Cloud PCs** that the provisioning of the Cloud P
 
 > **Note**: Provisioning a Cloud PC takes around 25-35 minutes and depends on the current queue, region and language configuration.
 
-9. Once your Frontline Cloud PC has been successfully created, you can now publish some cloud apps under **All Cloud Apps**. 
+9. Once your Flex Cloud PC has been successfully created, you can now publish some cloud apps under **All Cloud Apps**. 
 
 ![W365 Provisioning policy - Frontline Shared Cloud Apps](../../Images/SolutionGuide/W365/04-W365-FrontlineSharedApps-05.png)
 
@@ -182,4 +182,4 @@ After a few minutes, the apps should appear with the app status **Published**.
 
 ![W365 Provisioning policy - Frontline Shared Cloud Apps](../../Images/SolutionGuide/W365/04-W365-FrontlineSharedApps-06.png)
 
-12. Now try Windows 365 Frontline in shared mode from Cloud Apps.
+12. Now try Windows 365 Flex in shared mode from Cloud Apps.
