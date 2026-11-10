@@ -57,7 +57,7 @@ By the end of this Academy, you'll be able to:
  
  - Challenge 1: **[Create a host pool for multi-session desktops](Challenges/AVD/01-AVD-Multi-Session-Hostpool.md)**
  - Challenge 2: **[Configure RDP Properties](Challenges/AVD/02-AVD-RDP-Properties.md)**
- - Challenge 3: **[Enable AVD Insights](Challenges/AVD/03-AVD-Monitoring.md)**
+ - Challenge 3 [Optional]: **[Enable AVD Insights](Challenges/AVD/03-AVD-Monitoring.md)**
  
  ### Windows 365
  
