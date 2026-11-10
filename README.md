@@ -66,17 +66,10 @@ By the end of this Academy, you'll be able to:
  - Challenge 3: **[Deploy application via Intune](Challenges/W365/03-W365-App-Deployment.md)**
  - Challenge 4: **[Deploy Windows 365 Flex Shared Desktop or Cloud Apps](Challenges/W365/04-W365-Flex.md)**
 
- ### Windows 365 for Agents (Draft)
-
- - Challenge 1: **[Build a Copilot Studio Agent with Computer Use on Windows 365 (Draft)](Challenges/W365A/01-W365A-Copilot-Agent.md)**
-
 ## Contributor
 
 - [Ben Martin Baur](https://www.linkedin.com/in/ben-martin-baur/)
 - [Daniel Weppeler](https://www.linkedin.com/in/daniel-weppeler/)
-
-
-Engineered and powered by [avdpunks.com](https://avdpunks.com)
 
 
 
