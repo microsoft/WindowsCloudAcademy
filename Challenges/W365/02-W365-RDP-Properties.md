@@ -4,34 +4,56 @@
 
 ## Introduction
 
-With the Remote Desktop Protocol (RDP) you can create redirections that let users connect to peripherals (like cameras, USB drives, and printers) from remote devices like Cloud PCs. By default, these redirections are enabled for Cloud PCs. 
+Remote Desktop Protocol (RDP) redirection lets users share their local clipboard, drives, and peripherals with a Cloud PC. For security reasons, Microsoft disables clipboard, drive, USB, and printer redirection by default for Cloud PCs.
 
-For **security** reasons, you want to override the default and block some devices from being redirected.
-
-In General there are two ways to manage these redirections:
-
-**Settings Catalog**: Use a device configuration policy in Microsoft Endpoint Manager. Supports both Microsoft Entra ID joined and Microsoft Entra ID hybrid joined Cloud PCs.
-
-**Group Policy Object (GPO)**: Use GPOs in Windows Server Active Directory. Supports Microsoft Entra ID hybrid joined Cloud PCs only.
+In this challenge, you will use the **Microsoft Intune Settings catalog** to enable clipboard and drive redirection on your Cloud PC. You will assign the policy to your device and test copying text and accessing redirected client drives.
 
 ## Challenge
 
-Your Security Team want to **prevent** that a user can **Copy & Paste** data from their local client to the Cloud PC.
+Use the Microsoft Entra joined Cloud PC provisioned in Challenge 1. Enable clipboard and client drive redirection for this lab, leaving other redirection settings unchanged.
 
-In addition **no local drive** should be available in the remote session.
+### 1. Target your Cloud PC
 
-## 💡 Pro Tipps 💡
+Use the existing **dynamic device group** `GRP-P[n]-Devices`, replacing `[n]` with your team number:
 
-> **Option 1:** Create a dynamic group that includes only your Cloud PC. Ensure the filter matches your device name exactly or starts with a specific pattern to avoid including other devices.
+- Update its **dynamic membership rule** to match your Cloud PC's custom device name from Challenge 1.
+- Set **Dynamic rule processing** to **On**.
+- Wait for membership processing and verify that only your Cloud PC is included before assigning the policy. Do not target other teams' devices.
 
-> **Option 2:** Create an assignment filter in Intune and configure it so that only your Cloud PC matches the criteria. Next, assign the configuration policy to all devices, but apply the filter to ensure the policy is restricted to your Cloud PC only.
+### 2. Create and assign the policy
+
+In the **Microsoft Intune admin center**, create a configuration policy for **Windows 10 and later** using the **Settings catalog**. Search for **Device and Resource Redirection** and configure:
+
+| Setting | Required value |
+|---|---|
+| Do not allow Clipboard redirection | **Disabled** |
+| Do not allow drive redirection | **Disabled** |
+
+Assign the policy to the **dynamic device group** `GRP-P[n]-Devices`.
+
+### 3. Test redirection
+
+- Sync your Cloud PC with Intune and confirm that both settings report successful application.
+- In **Windows App** on your local Windows device, allow clipboard and drive redirection in the connection settings where available.
+- Sign out of the Cloud PC session, then reconnect using **Windows App** on a local Windows device.
+- Verify that you can copy and paste text in both directions between the local device and the Cloud PC.
+- Open **File Explorer** on the Cloud PC and verify that the client drives selected for redirection are accessible.
+
+## 💡 Pro Tips 💡
+
+> **1. Disabled means allowed.** Both settings begin with **Do not allow**, so set them to **Disabled** to permit redirection. If it remains blocked, check for conflicting policies and client-side redirection settings.
+
+> **2. Scope matters.** Use the exact device name or a team-specific prefix such as `CPC-P1-`, not the broad prefix `CPC-`. Dynamic group membership and policy application can take time.
+
+> **3. Our recommended assignment approach.** Outside this lab, we recommend **All devices** with an **Intune assignment filter** in **Include** mode to target the intended devices. For this challenge, use the existing **dynamic device group** to practice membership rules and group-based policy assignments.
 
 ## Success Criteria
-- A new **dynamic group** with **your** Cloud PC is configured **or** **Intune assignment filter** for **your** Cloud PC. 
-- A new device configuration policy is created for your Cloud PC and **Copy & Paste** is not possible and **local drives** are **not** redirected.
+- The policy targets only your Cloud PC through `GRP-P[n]-Devices` with **Dynamic rule processing** set to **On**.
+- Intune reports that both **Do not allow** settings are successfully applied as **Disabled**.
+- Copy and paste works in both directions, and selected client drives are accessible from the Cloud PC.
 
 ## Learning Resources
-- [Manage RDP Devices](https://learn.microsoft.com/en-us/windows-365/enterprise/manage-rdp-device-redirections)
+- [Manage RDP device redirections for Cloud PCs](https://learn.microsoft.com/en-us/windows-365/enterprise/manage-rdp-device-redirections)
 - [Create a device profile in Microsoft Intune](https://learn.microsoft.com/en-us/mem/intune/configuration/device-profile-create)
 - [Dynamic membership rules for groups in Azure Active Directory](https://learn.microsoft.com/en-us/azure/active-directory/enterprise-users/groups-dynamic-membership)
 - [Use filters when assigning your apps, policies, and profiles in Microsoft Intune](https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/filters)
