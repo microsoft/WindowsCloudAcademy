@@ -70,12 +70,3 @@ By the end of this Academy, you'll be able to:
 
 - [Ben Martin Baur](https://www.linkedin.com/in/ben-martin-baur/)
 - [Daniel Weppeler](https://www.linkedin.com/in/daniel-weppeler/)
-
-
-
-
-
-
-
-
-
