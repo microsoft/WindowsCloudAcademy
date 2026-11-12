@@ -1,33 +1,64 @@
 # Challenge 1: Provisioning a Windows 365 Enterprise Cloud PC
 
-[Previous Challenge](../AVD/03-AVD-FSLogix.md) - **[Home](../../README.md)** - [Next Challenge](./02-W365-RDP-Properties.md)
+[Previous Challenge](./03-AVD-Monitoring.md) - **[Home](../../README.md)** - [Next Challenge](./02-W365-RDP-Properties.md)
 
 ## Introduction
 
-Windows 365 is a new cloud-based service offered by Microsoft that allows businesses to stream a virtualized version of Windows 10 or Windows 11 to any device with an internet connection. Essentially, it is a subscription-based service that enables users to access a cloud-based Windows desktop from any device, including laptops, tablets, and smartphones, without needing to install Windows locally. The service is designed to provide greater flexibility and scalability to businesses, allowing them to quickly and easily provision Windows-based virtual machines to their employees as needed.
+In this challenge, you will provision a **Windows 365 Enterprise Cloud PC** for a team user. Unlike a pooled AVD desktop, a Cloud PC provides a personal Windows desktop with dedicated resources, apps, files, and settings.
 
-With Windows 365, users can log in to their cloud-based Windows desktop from anywhere, using any device, and access all their apps, files, and settings as if they were using a physical computer. The service is particularly useful for businesses with remote workers, as it enables employees to work from any location and on any device, while still providing the same Windows experience and security they would have in the office.
+You will configure licensing, create a provisioning policy using a **Microsoft-hosted network**, and grant the user local administrator rights for this lab. After provisioning, you will connect to the Cloud PC and verify its configuration.
 
 ## Challenge
 
-You have purchased one Windows 365 Enterprise licenses. At this point, you can start with the provisioning of Cloud PCs.
+Use your existing team group, `GRP-P[n]-Users`, replacing `[n]` with your team number. One Windows 365 Enterprise license is available for this challenge.
 
-To set up your system to provision on-demand Cloud PCs for you, you need to:
+### 1. Prepare the user and licenses
 
-- An Entra ID group with **GRP-P[count]-Users**, e.g. GRP-P1-Users, is already created.
-- Assign licenses to your user or group.
-- Your User should have local admin rights for his Cloud PC.
-- Your Cloud PC is using the Microsoft Hosted Networks.
-- Create a provisioning policy.
-- **Make sure your Cloud PC has a custom name that is not the default, for example: CPC-P1-%RAND:5%"**
+- Select a team user who is a member of `GRP-P[n]-Users`.
+- Assign the available **Windows 365 Enterprise** license to that user, directly or through group-based licensing. Do not assign more licenses than are available.
+- Verify that a **Microsoft E7** license is assigned to the user and that the required Windows Enterprise, Microsoft Intune, and Microsoft Entra ID services are enabled.
+
+### 2. Create and assign the provisioning policy
+
+In the **Microsoft Intune admin center**, create a Windows 365 provisioning policy with the following settings:
+
+| Setting | Required value |
+|---|---|
+| Policy name | `PP-P[n]-YourPolicyName` |
+| Join type | **Microsoft Entra join** |
+| Network | **Microsoft-hosted network** |
+| Image | A **Windows 11 gallery image** |
+| Device name template | A custom name, for example `CPC-P1-%RAND:5%` for team 1 |
+| Assignment | `GRP-P[n]-Users` |
+
+> **Important: Use your own team number in the device name template.**
+> - The resulting device name must be **5-15 characters long**.
+> - Include a **random component of at least five characters**, using `%RAND:5%` or a larger value within the name length limit.
+> - For example, team 1 uses `CPC-P1-%RAND:5%`; team 25 uses `CPC-P25-%RAND:5%`.
+
+### 3. Configure local administrator rights
+
+- Create a **Cloud PC configurations** policy with **Enable local admin** enabled.
+- Assign it to `GRP-P[n]-Users`. This grants each targeted user administrator rights on their own Cloud PC.
+
+### 4. Verify the Cloud PC
+
+- Monitor provisioning until the Cloud PC reports **Provisioned**.
+- Connect as the licensed team user using **Windows App** or a supported browser.
+- Verify the custom Windows device name, Intune enrollment, and the user's local administrator rights.
+
+## Pro Tip
+
+Local administrator rights are required for this lab, not a production recommendation. Use standard user permissions unless elevated access is necessary.
 
 ## Success Criteria
-- A Windows365 & Intune License is automatically assigned to your users.
-- Your User has local admin rights.
-- A provisioning policy with **PP-P[count]-YourPolicyName** is created.
-- A Cloud PC deployment is running.
+
+- The team user has the required licenses and is targeted by the provisioning policy.
+- The Cloud PC is **Provisioned**, uses the custom device name, and is enrolled in Intune.
+- The user can connect to their Cloud PC and has local administrator rights.
 
 ## Learning Resources
 - [Deployment overview](https://learn.microsoft.com/en-us/windows-365/enterprise/deployment-overview)
-- [User settings](https://learn.microsoft.com/en-us/windows-365/enterprise/assign-users-as-local-admin)
+- [Windows 365 requirements](https://learn.microsoft.com/en-us/windows-365/enterprise/requirements)
+- [Cloud PC configurations](https://learn.microsoft.com/en-us/windows-365/enterprise/cloud-pc-configurations)
 - [Create a provisioning policy](https://learn.microsoft.com/en-us/windows-365/enterprise/create-provisioning-policy)
