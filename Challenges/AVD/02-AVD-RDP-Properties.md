@@ -8,20 +8,29 @@ Azure Virtual Desktop enables you to configure and customize Remote Desktop Prot
 
 Customizing a host pool's Remote Desktop Protocol (RDP) properties, such as multi-monitor experience and audio redirection, lets you deliver an optimal experience for your users based on their needs. 
 
+For security reasons, Microsoft disables clipboard, drive, USB, and printer redirection by default for newly created AVD host pools.
+
 If you'd like to change the default RDP file properties, you can customize RDP properties in Azure Virtual Desktop by either using the Azure portal or by using the -CustomRdpProperty parameter in the Update-AzWvdHostPool cmdlet.
 
 ## Challenge 
 
+Use the pooled host pool from Challenge 1. 
+ 
+In this challenge, enable clipboard redirection in both directions. You can optionally enable other redirections required for your use case.
+
 - Pooled (Desktop / Remote App) Host pool 
     - Allow Multiple Displays
     - Smart Sizing should be enabled
-    - Deny Camera and Microphone  
-    - Deny Copy&Paste, Storage, networkdrive and printer redirection
+    - Enable clipboard redirection in both directions
+    - Optionally enable camera, microphone, client drive (including mapped network drives), USB, or printer redirection
+    - Keep any redirections you do not need disabled
+
+Preserve the existing Microsoft Entra ID SSO settings. Save the changes, disconnect, and reconnect to test the updated settings. If a redirection remains blocked, check the session-host policies and client settings.
 
 ## Success Criteria
 
-- You can not access local or networkdrives redirected from the session host
-- You can not Copy and Paste from you local devices to the desktop or remote app
+- You can copy and paste text in both directions between your local device and the remote desktop or a published RemoteApp.
+- Any additional redirections you enabled work as intended; unneeded redirections remain disabled.
 
 ## Learning Resources
 - [Customize RDP Properties](https://learn.microsoft.com/en-us/azure/virtual-desktop/customize-rdp-properties)
