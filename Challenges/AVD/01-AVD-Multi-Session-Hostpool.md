@@ -58,7 +58,7 @@ Use the following configuration. Replace `[n]` with your team number.
 ## 💡 Pro Tips 💡
 > **1. VM sign-in permissions are already configured.** Microsoft Entra ID-joined session hosts require the **Virtual Machine User Login** RBAC role for user sign-in. The lab deployment assigns this role to `GRP-P[n]-Users` on `RG-WCA-PUNK[n]`. Deploy session hosts there to inherit it; you must still assign the group to the AVD application groups. [Learn more](https://learn.microsoft.com/en-us/azure/virtual-desktop/azure-ad-joined-session-hosts#assign-user-access-to-host-pools)
 
-> **2. Configure SSO.** Use the snippet below to set the host pool's **Microsoft Entra ID SSO** RDP property. Devices can belong to another tenant, but users must sign in with an authorized account in the host pool's tenant. [Learn more](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-azure-ad-joined-vm#access-azure-ad-joined-vms)
+> **2. Configure SSO.** Use the snippet below to set the host pool's **Microsoft Entra ID SSO** RDP property (**targetisaadjoined:i:1**). Devices can belong to another tenant, but users must sign in with an authorized account in the host pool's tenant. [Learn more](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-azure-ad-joined-vm#access-azure-ad-joined-vms)
 >
 > Run in **Azure Cloud Shell > PowerShell** with the correct subscription selected. Replace `[n]` with your team number and `Your-Hostpool-Name` with your host pool's name.
 >
